@@ -12,8 +12,9 @@
 		F52F3EA71FE8799A00A38344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52F3EA51FE8799A00A38344 /* Main.storyboard */; };
 		F52F3EA91FE8799A00A38344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52F3EA81FE8799A00A38344 /* Assets.xcassets */; };
 		F52F3EAC1FE8799A00A38344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52F3EAA1FE8799A00A38344 /* LaunchScreen.storyboard */; };
-		F52F3EBB1FE95D1500A38344 /* Data Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F52F3EB91FE95D1500A38344 /* Data Model.xcdatamodeld */; };
 		F572B9771FEB1A74002ADE44 /* CategoryViewCellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572B9761FEB1A74002ADE44 /* CategoryViewCellTableViewController.swift */; };
+		F572B9A21FEF12E3002ADE44 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572B9A11FEF12E3002ADE44 /* Item.swift */; };
+		F572B9A41FEF12F1002ADE44 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572B9A31FEF12F1002ADE44 /* Category.swift */; };
 		FA9CAE9C53AE3FEDB35923AB /* Pods_Todo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1258AA37B97DD647997121CB /* Pods_Todo.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +29,9 @@
 		F52F3EA81FE8799A00A38344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52F3EAB1FE8799A00A38344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52F3EAD1FE8799A00A38344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52F3EBA1FE95D1500A38344 /* Data Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Data Model.xcdatamodel"; sourceTree = "<group>"; };
 		F572B9761FEB1A74002ADE44 /* CategoryViewCellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCellTableViewController.swift; sourceTree = "<group>"; };
+		F572B9A11FEF12E3002ADE44 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F572B9A31FEF12F1002ADE44 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 		F52F3EB51FE90D1A00A38344 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				F52F3EB91FE95D1500A38344 /* Data Model.xcdatamodeld */,
+				F572B9A31FEF12F1002ADE44 /* Category.swift */,
+				F572B9A11FEF12E3002ADE44 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -257,10 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F572B9A21FEF12E3002ADE44 /* Item.swift in Sources */,
 				F572B9771FEB1A74002ADE44 /* CategoryViewCellTableViewController.swift in Sources */,
 				F52F3EA41FE8799A00A38344 /* TodoListViewController.swift in Sources */,
-				F52F3EBB1FE95D1500A38344 /* Data Model.xcdatamodeld in Sources */,
 				F52F3EA21FE8799A00A38344 /* AppDelegate.swift in Sources */,
+				F572B9A41FEF12F1002ADE44 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,19 +451,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F52F3EB91FE95D1500A38344 /* Data Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F52F3EBA1FE95D1500A38344 /* Data Model.xcdatamodel */,
-			);
-			currentVersion = F52F3EBA1FE95D1500A38344 /* Data Model.xcdatamodel */;
-			path = "Data Model.xcdatamodeld";
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F52F3E961FE8799A00A38344 /* Project object */;
 }
